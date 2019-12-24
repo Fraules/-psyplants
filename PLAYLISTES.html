@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        margin-left: 50rem;
+    }
+li:hover{
+    width:250px;
+    background:rgb(77, 160, 255);
+    cursor:pointer;
+}
+</style>
+</head>
+<body>
+<audio id=audio src="sound1.mp3" controls></audio>
+<ul>  
+    <li id="playlist\Выделенный плейлист\Psyplants - Душа ушла.mp3">Душа ушла</li>
+    <li id="playlist\Выделенный плейлист\5.Psyplants - I love u Moscow baby(feat. nck).mp3">I love u Moscow baby</li>
+    <li id="playlist\Выделенный плейлист\Панат Фаши - 04. порох меня не берт ft. Psyplants.mp3">Порох меня не берт</li>
+    <li id="playlist\Выделенный плейлист\Psyplants - 8.меняет местами.mp33">Меняет местами</li>
+    <li id="playlist\Выделенный плейлист\volans анс. psyplants - zima v noyabre.mp3">Zima v noyabre</li>
+ 
+    
+</ul>
+<script>
+var alles_li = document.getElementsByTagName("li");
+for(var i = 0; i < alles_li.length; i++){
+    alles_li[i].onclick = function(){
+        audio.src = this.id;
+        audio.play();
+    }
+}
+</script>
+
+
+</body>
+</html>
