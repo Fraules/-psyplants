@@ -1,4 +1,4 @@
-# psyplants
+# 🔊🎼psyplants
 1
 Fraules/
 psyplants-playlist/
